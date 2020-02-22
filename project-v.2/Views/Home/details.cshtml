@@ -1,0 +1,15 @@
+﻿@model project_v._2.Models.register
+
+@{
+    ViewData["Title"] = "details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-5 my-3 bg-dark text-white">
+    <h1>กรุณาติดต่อตามที่อยู่ด้านล่าง</h1>
+    <hr />
+    <p>ชื่อ : คุณ @Html.DisplayFor(model => model.name)</p>
+    <p>งาน : @Html.DisplayFor(model => model.namejob)</p>
+    <p>เบอร์โทร : @Html.DisplayFor(model => model.phone)</p>
+    <p>ID Line : @Html.DisplayFor(model => model.line)</p>
+</div>

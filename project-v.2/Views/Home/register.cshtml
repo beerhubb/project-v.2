@@ -1,0 +1,89 @@
+﻿@model project_v._2.Models.register
+
+@{
+    ViewData["Title"] = "register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>register</h1>
+
+<h4>register</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="username" class="control-label"></label>
+                <input asp-for="username" class="form-control" />
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input asp-for="password" class="form-control" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pictruejob1" class="control-label"></label>
+                <input asp-for="pictruejob1" class="form-control" />
+                <span asp-validation-for="pictruejob1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pictruejob2" class="control-label"></label>
+                <input asp-for="pictruejob2" class="form-control" />
+                <span asp-validation-for="pictruejob2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pictruejob3" class="control-label"></label>
+                <input asp-for="pictruejob3" class="form-control" />
+                <span asp-validation-for="pictruejob3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="namejob" class="control-label"></label>
+                <input asp-for="namejob" class="form-control" />
+                <span asp-validation-for="namejob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="detail" class="control-label"></label>
+                <input asp-for="detail" class="form-control" />
+                <span asp-validation-for="detail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="address" class="control-label"></label>
+                <input asp-for="address" class="form-control" />
+                <span asp-validation-for="address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="price" class="control-label"></label>
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="phone" class="control-label"></label>
+                <input asp-for="phone" class="form-control" />
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="line" class="control-label"></label>
+                <input asp-for="line" class="form-control" />
+                <span asp-validation-for="line" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
